@@ -1,0 +1,127 @@
+══════════════════════════════════════════════════════
+   DIO EXPLORER — RELATÓRIO DE TESTES UNITÁRIOS
+══════════════════════════════════════════════════════
+   Data/Hora : 20/08/2026, 18:59:58
+   Aluno     : Victor Hugo
+   Tecnologia: Java
+══════════════════════════════════════════════════════
+
+── RESULTADOS ─────────────────────────────────────────
+
+[PASS] T01 — data/trilhas_dio.json existe e é válido JSON
+[PASS] T02 — propriedade 'trilhas' é um array
+[PASS] T03 — JSON contém pelo menos 40 trilhas — encontradas: 40
+[PASS] T04 — todas as trilhas possuem campos obrigatórios — inválidas: 0
+[PASS] T05 — /trilha Java: trilha encontrada — "Formação Java Developer"
+[PASS] T06 — /trilha Java: campo 'nivel' presente
+[PASS] T07 — /trilha Java: campo 'xp_total' > 0 — xp=8800
+[PASS] T08 — /trilha Java: badges é array não vazio
+[PASS] T09 — /trilha Java: lives é array não vazio
+[PASS] T10 — /trilha Java: numero_de_modulos > 0
+[PASS] T11 — gerarModulos: quantidade igual a numero_de_modulos — gerados: 11
+[PASS] T12 — gerarModulos: cada módulo começa com 'Módulo'
+[PASS] T13 — /desafio: objeto gerado com sucesso
+[PASS] T14 — /desafio: id entre 1 e 999 — id=70
+[PASS] T15 — /desafio: tecnologia igual à trilha
+[PASS] T16 — /desafio: enunciado não vazio
+[PASS] T17 — /desafio: requisitos é array com itens
+[PASS] T18 — /desafio: criterios soma 100 pts
+[PASS] T19 — /certificado: objeto gerado com sucesso
+[PASS] T20 — /certificado: ID começa com 'DIO-'
+[PASS] T21 — /certificado: nome do aluno correto — aluno="Victor Hugo"
+[PASS] T22 — /certificado: trilha correta
+[PASS] T23 — /certificado: URL de validação gerada
+[PASS] T24 — /certificado: data de emissão não vazia — data="20 de agosto de 2026"
+[PASS] T25 — /certificado: badges presentes
+[PASS] T26 — /trilha tecnologia inválida: retorna undefined
+[PASS] T27 — /trilha busca case-insensitive ('java' == 'Java')
+[PASS] T28 — todas as trilhas têm 'vitalicio' booleano — inválidas: 0
+[PASS] T29 — todas as trilhas têm estrutura de promoção válida
+[PASS] T30 — todos os IDs de trilhas são únicos — total=40, únicos=40
+
+── SUMÁRIO ─────────────────────────────────────────────
+
+   Total de testes : 30
+   ✅ Aprovados    : 30
+   ❌ Reprovados   : 0
+   📊 Cobertura    : 100.0%
+   🏆 Status       : APROVADO (≥ 70%)
+
+══════════════════════════════════════════════════════
+
+── SAÍDA /trilha Java ──────────────────────────────────
+
+   📚 Trilha     : Formação Java Developer
+   🛠  Tecnologia : Java
+   📊 Nível      : Intermediário
+   🧩 Módulos    : 11
+   ⭐ XP Total   : 8800 XP
+
+   Módulos gerados:
+     Módulo 1 — Fundamentos e sintaxe de Java
+     Módulo 2 — Ambiente de desenvolvimento e configuração
+     Módulo 3 — Estruturas de dados e controle de fluxo
+     Módulo 4 — Programação Orientada a Objetos
+     Módulo 5 — APIs e integrações externas
+     Módulo 6 — Testes unitários e boas práticas
+     Módulo 7 — Padrões de projeto (Design Patterns)
+     Módulo 8 — Segurança e autenticação
+     Módulo 9 — Performance e otimização
+     Módulo 10 — Deploy e ambiente de produção
+     Módulo 11 — Projeto final guiado
+
+   Badges:
+     🏅 Java Starter
+     🏅 OOP Master
+     🏅 Spring Expert
+
+   Lives:
+     📺 Java do Zero
+     📺 Spring Boot na prática
+     📺 Microsserviços com Java
+
+── SAÍDA /desafio Java ─────────────────────────────────
+
+   Desafio #70 — Java (Intermediário)
+   Enunciado: Implemente um sistema de cadastro de alunos em Java com operações CRUD completas. O sistema deve permitir adicionar, listar, atualizar e remover alunos de uma lista em memória.
+
+   Requisitos:
+     1. Criar a classe Aluno com atributos: id, nome, email e nota.
+     2. Implementar os métodos: adicionar(), listar(), buscarPorId(), atualizar() e remover().
+     3. Validar que email não seja nulo ou vazio antes de salvar.
+     4. Retornar mensagem de erro amigável caso o aluno não seja encontrado.
+     5. Cobrir os métodos principais com testes unitários (mínimo 3 casos).
+
+   Entrada  : Aluno { id: 1, nome: "Victor Hugo", email: "vh@dio.me", nota: 9.5 }
+   Saída    : Aluno cadastrado com sucesso. Total de alunos: 1
+
+   Dicas:
+     - Use ArrayList ou HashMap para armazenar os alunos em memória.
+     - Lance exceções customizadas para casos de validação.
+
+   Critérios de avaliação:
+     Código funcional   : 40 pts
+     Boas práticas      : 30 pts
+     Edge cases         : 20 pts
+     Performance        : 10 pts
+
+── SAÍDA /certificado ──────────────────────────────────
+
+   ID          : DIO-2026-793205
+   Aluno       : Victor Hugo
+   Trilha      : Formação Java Developer
+   Tecnologia  : Java
+   Nível       : Intermediário
+   Módulos     : 11
+   XP          : 8800
+   Data        : 20 de agosto de 2026
+   Validação   : https://web.dio.me/certificate/DIO-2026-793205
+
+   Badges conquistadas:
+     🏅 Java Starter
+     🏅 OOP Master
+     🏅 Spring Expert
+
+══════════════════════════════════════════════════════
+   Relatório gerado por DIO Explorer — IBM Bob
+══════════════════════════════════════════════════════
