@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "dio-explorer-mcp",
   "version": "1.0.0",
   "description": "MCP Server para o DIO Explorer — expõe as ferramentas /trilha, /desafio e /certificado via protocolo MCP (stdio ou HTTP).",
@@ -14,7 +14,7 @@
   },
   "files": ["build"],
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@modelcontextprotocol/sdk": "^1.32.0",
     "zod": "^3.23.0"
   },
   "devDependencies": {
